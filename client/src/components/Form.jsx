@@ -8,8 +8,9 @@ const Form = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
+    if (!title) return;
     e.preventDefault();
-    dispatch(addTodo({ id: nanoid(), title, comleted: false }));
+    dispatch(addTodo({ title }));
     setTitle("");
   };
   return (
