@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/todos/todoSlice";
-import { nanoid } from "@reduxjs/toolkit";
 
 const Form = () => {
   const [title, setTitle] = useState("");
